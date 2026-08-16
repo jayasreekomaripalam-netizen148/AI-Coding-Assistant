@@ -1,0 +1,43 @@
+body.dark {
+
+    background:#111827;
+    color:white;
+
+}
+
+
+body.dark .topbar {
+
+    background:#1f2937;
+
+}
+
+
+body.dark .card {
+
+    background:#1f2937;
+    color:white;
+
+}
+
+
+body.dark .chat-box {
+
+    background:#1f2937;
+
+}
+
+
+body.dark .editor-section textarea {
+
+    background:#111827;
+    color:white;
+
+}
+
+
+body.dark .output-box {
+
+    background:#000;
+
+}

@@ -1,0 +1,56 @@
+body{
+
+margin:0;
+display:flex;
+justify-content:center;
+align-items:center;
+height:100vh;
+background:#1e293b;
+font-family:Arial,sans-serif;
+color:white;
+
+}
+
+.error-container{
+
+text-align:center;
+
+}
+
+.error-container h1{
+
+font-size:120px;
+margin-bottom:10px;
+
+}
+
+.error-container h2{
+
+margin-bottom:20px;
+
+}
+
+.error-container p{
+
+margin-bottom:30px;
+font-size:18px;
+
+}
+
+.error-container button{
+
+padding:12px 25px;
+background:#2563eb;
+color:white;
+border:none;
+border-radius:10px;
+cursor:pointer;
+
+}
+
+.error-container button:hover{
+
+background:#1d4ed8;
+
+}
+

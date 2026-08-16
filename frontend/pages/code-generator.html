@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AI Code Generator</title>
+
+    <link rel="stylesheet" href="../assets/css/topbar.css">
+    <link rel="stylesheet" href="../assets/css/sidebar.css">
+    <link rel="stylesheet" href="../assets/css/generator.css">
+
+</head>
+
+<body>
+
+    <!-- Topbar -->
+
+    <div class="topbar">
+
+        <button class="menu-btn" onclick="toggleSidebar()">
+            ☰
+        </button>
+
+        <div class="logo">
+            AI Hub
+        </div>
+
+    </div>
+
+
+    <!-- Sidebar -->
+
+    <div class="sidebar" id="sidebar">
+
+        <h2>AI Tools</h2>
+
+        <ul>
+
+            <li onclick="location.href='home.html'">
+                💬 AI Chat
+            </li>
+
+            <li onclick="location.href='code-generator.html'">
+                💻 Code Generator
+            </li>
+
+            <li onclick="location.href='bug-fixer.html'">
+                🐞 Bug Fixer
+            </li>
+
+            <li onclick="location.href='image-generator.html'">
+                🎨 Image AI
+            </li>
+
+            <li onclick="location.href='learning.html'">
+                📚 Learning
+            </li>
+
+            <li onclick="location.href='settings.html'">
+                ⚙ Settings
+            </li>
+
+        </ul>
+
+    </div>
+
+
+    <!-- Code Generator -->
+
+    <main class="generator">
+
+        <h1>💻 AI Code Generator</h1>
+
+        <p>
+            Describe your program and generate code instantly.
+        </p>
+
+
+        <textarea
+            id="codePrompt"
+            placeholder="Example: Create a Python calculator"
+        ></textarea>
+
+
+        <button id="generateBtn">
+            Generate Code 🚀
+        </button>
+
+
+        <div class="code-output" id="codeOutput">
+
+            Your generated code will appear here...
+
+        </div>
+
+    </main>
+
+
+    <!-- JavaScript -->
+
+    <script src="../assets/js/sidebar.js"></script>
+    <script src="../assets/js/api.js"></script>
+    <script src="../assets/js/generator.js"></script>
+
+</body>
+
+</html>

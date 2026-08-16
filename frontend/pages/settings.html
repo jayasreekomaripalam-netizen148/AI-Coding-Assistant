@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AI Coding Assistant - Settings</title>
+
+    <link rel="stylesheet" href="../assets/css/topbar.css">
+    <link rel="stylesheet" href="../assets/css/sidebar.css">
+    <link rel="stylesheet" href="../assets/css/settings.css">
+
+</head>
+
+<body>
+
+    <!-- Topbar -->
+
+    <div class="topbar">
+
+        <button class="menu-btn" onclick="toggleSidebar()">
+            ☰
+        </button>
+
+        <div class="logo">
+            AI Hub
+        </div>
+
+    </div>
+
+
+    <!-- Sidebar -->
+
+    <div class="sidebar" id="sidebar">
+
+        <h2>AI Tools</h2>
+
+        <ul>
+
+            <li onclick="location.href='home.html'">💬 AI Chat</li>
+
+            <li onclick="location.href='code-generator.html'">
+                💻 Code Generator
+            </li>
+
+            <li onclick="location.href='bug-fixer.html'">
+                🐞 Bug Fixer
+            </li>
+
+            <li onclick="location.href='image-generator.html'">
+                🎨 Image AI
+            </li>
+
+            <li onclick="location.href='learning.html'">
+                📚 Learning
+            </li>
+
+            <li onclick="location.href='settings.html'">
+                ⚙ Settings
+            </li>
+
+        </ul>
+
+    </div>
+
+
+    <!-- Settings -->
+
+    <main class="settings">
+
+        <h1>⚙ Settings</h1>
+
+        <p>Customize your AI Coding Assistant.</p>
+
+
+        <div class="settings-card">
+
+            <h2>🌙 Appearance</h2>
+
+            <label>
+
+                <input
+                    type="checkbox"
+                    id="darkMode">
+
+                Enable Dark Mode
+
+            </label>
+
+        </div>
+
+
+        <div class="settings-card">
+
+            <h2>🔔 Notifications</h2>
+
+            <label>
+
+                <input
+                    type="checkbox"
+                    id="notifications"
+                    checked>
+
+                Enable Notifications
+
+            </label>
+
+        </div>
+
+
+        <div class="settings-card">
+
+            <h2>🤖 AI Preferences</h2>
+
+            <label for="language">
+                Preferred Programming Language
+            </label>
+
+            <select id="language">
+
+                <option value="python">Python</option>
+
+                <option value="javascript">
+                    JavaScript
+                </option>
+
+                <option value="java">Java</option>
+
+                <option value="cpp">C++</option>
+
+            </select>
+
+        </div>
+
+
+        <button id="saveSettings">
+            Save Settings 💾
+        </button>
+
+
+        <p id="settingsMessage"></p>
+
+    </main>
+
+
+    <script src="../assets/js/sidebar.js"></script>
+    <script src="../assets/js/dark.js"></script>
+
+    <script>
+
+        const darkMode =
+            document.getElementById("darkMode");
+
+        const saveSettings =
+            document.getElementById("saveSettings");
+
+        const settingsMessage =
+            document.getElementById("settingsMessage");
+
+
+        darkMode.addEventListener("change", function(){
+
+            if(this.checked){
+
+                document.body.classList.add("dark-mode");
+
+            }else{
+
+                document.body.classList.remove("dark-mode");
+
+            }
+
+        });
+
+
+        saveSettings.addEventListener("click", function(){
+
+            localStorage.setItem(
+                "preferredLanguage",
+                document.getElementById("language").value
+            );
+
+            localStorage.setItem(
+                "notifications",
+                document.getElementById("notifications").checked
+            );
+
+            settingsMessage.textContent =
+                "Settings saved successfully! ✅";
+
+        });
+
+    </script>
+
+</body>
+
+</html>

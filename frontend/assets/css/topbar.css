@@ -1,0 +1,123 @@
+.topbar{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:15px;
+    background:#ffffff;
+    padding:15px 20px;
+    border-radius:12px;
+    box-shadow:0 2px 10px rgba(0,0,0,.1);
+    margin-bottom:25px;
+}
+
+.menu-btn{
+    font-size:24px;
+    border:none;
+    background:none;
+    cursor:pointer;
+}
+
+.search-box{
+    flex:1;
+}
+
+.search-box input{
+    width:100%;
+    padding:10px 15px;
+    border:1px solid #ccc;
+    border-radius:10px;
+    font-size:16px;
+}
+
+.top-icons{
+    display:flex;
+    gap:15px;
+    font-size:22px;
+}
+
+@media(max-width:768px){
+
+.topbar{
+    padding:10px;
+}
+
+.search-box input{
+    font-size:14px;
+}
+
+}
+
+
+.topbar{
+
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 25px;
+background:#ffffff;
+box-shadow:0 2px 10px rgba(0,0,0,.1);
+
+}
+
+.logo{
+
+font-size:24px;
+font-weight:bold;
+color:#2563eb;
+
+}
+
+.search-box{
+
+flex:1;
+margin:0 20px;
+
+}
+
+.search-box input{
+
+width:100%;
+padding:10px 15px;
+border:1px solid #ddd;
+border-radius:8px;
+
+}
+
+.top-icons{
+
+display:flex;
+gap:15px;
+align-items:center;
+
+}
+
+.top-icons span{
+
+cursor:pointer;
+font-size:22px;
+transition:.3s;
+
+}
+
+.top-icons span:hover{
+
+transform:scale(1.15);
+
+}
+
+.top-icons a{
+
+text-decoration:none;
+font-size:22px;
+color:#333;
+transition:.3s;
+
+}
+
+.top-icons a:hover{
+
+transform:scale(1.15);
+color:#2563eb;
+
+}
+

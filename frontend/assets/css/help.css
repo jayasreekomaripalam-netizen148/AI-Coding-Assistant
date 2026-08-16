@@ -1,0 +1,23 @@
+.help{
+
+margin-left:250px;
+padding:100px 30px;
+
+}
+
+.help-card{
+
+background:white;
+padding:20px;
+margin-bottom:20px;
+border-radius:12px;
+box-shadow:0 5px 15px rgba(0,0,0,.1);
+
+}
+
+.help-card h2{
+
+margin-bottom:10px;
+
+}
+

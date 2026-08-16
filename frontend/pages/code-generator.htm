@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>AI Code Generator</title>
+
+<link rel="stylesheet" href="../assets/css/topbar.css">
+<link rel="stylesheet" href="../assets/css/sidebar.css">
+<link rel="stylesheet" href="../assets/css/generator.css">
+
+</head>
+
+
+<body>
+
+
+<div class="topbar">
+
+    <button class="menu-btn" onclick="toggleSidebar()">
+        ☰
+    </button>
+<button onclick="generateCode()">
+Generate Code 🚀
+</button>
+    <div class="logo">
+        AI Hub
+    </div>
+
+</div>
+
+
+
+<div class="sidebar">
+
+    <h2>AI Tools</h2>
+
+    <ul>
+
+        <li>💬 AI Chat</li>
+        <li>💻 Code Generator</li>
+        <li>🐞 Bug Fixer</li>
+        <li>🎨 Image AI</li>
+        <li>📚 Learning</li>
+
+    </ul>
+
+</div>
+
+
+
+<div class="generator">
+
+<h1>💻 AI Code Generator</h1>
+
+<p>Describe your program and generate code instantly.</p>
+
+
+<textarea placeholder="Example: Create a Python calculator"></textarea>
+<button>
+Generate Code 🚀
+</button>
+
+
+<div class="code-output" id="codeOutput">
+
+Your generated code will appear here...
+
+</div>
+
+</div>
+
+
+<script src="../assets/js/sidebar.js"></script>
+<script src="../assets/js/generator.js"></script>
+<script src="../assets/js/api.js"></script>
+</body>
+
+</html>

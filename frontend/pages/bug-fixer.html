@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>AI Bug Fixer</title>
+
+<link rel="stylesheet" href="../assets/css/topbar.css">
+<link rel="stylesheet" href="../assets/css/sidebar.css">
+<link rel="stylesheet" href="../assets/css/bugfix.css">
+
+</head>
+
+<body>
+
+<div class="topbar">
+
+<button class="menu-btn" onclick="toggleSidebar()">
+☰
+</button>
+
+<div class="logo">
+AI Hub
+</div>
+
+</div>
+
+<div class="sidebar">
+
+<h2>AI Tools</h2>
+
+<ul>
+
+<li>💬 AI Chat</li>
+<li>💻 Code Generator</li>
+<li>🐞 Bug Fixer</li>
+<li>🎨 Image AI</li>
+<li>📚 Learning</li>
+
+</ul>
+
+</div>
+
+<div class="bugfix">
+
+<h1>🐞 AI Bug Fixer</h1>
+
+<p>Paste your code below and let AI help identify common issues.</p>
+
+<textarea id="bugInput" placeholder="Paste your code here..."></textarea>
+
+<button onclick="fixBug()">
+Analyze Code
+</button>
+
+<div class="bug-output">
+
+<pre id="bugResult">
+Analysis will appear here...
+</pre>
+
+</div>
+
+</div>
+
+<script src="../assets/js/sidebar.js"></script>
+<script src="../assets/js/bugfix.js"></script>
+
+</body>
+
+</html>
+

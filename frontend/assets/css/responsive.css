@@ -1,0 +1,103 @@
+/* Mobile */
+@media (max-width:768px){
+
+.content{
+    margin-left:0;
+    width:100%;
+    padding:15px;
+}
+
+.cards{
+    grid-template-columns:1fr;
+}
+
+.topbar{
+    padding:10px;
+}
+
+.search-box input{
+    font-size:14px;
+}
+
+}
+
+/* Tablet */
+@media (min-width:769px) and (max-width:1024px){
+
+.cards{
+    grid-template-columns:repeat(2,1fr);
+}
+
+}
+
+/* Laptop/Desktop */
+@media (min-width:1025px){
+
+.cards{
+    grid-template-columns:repeat(4,1fr);
+}
+
+}
+
+/* Mobile Responsive */
+
+@media (max-width: 768px) {
+
+.sidebar{
+    width:220px;
+    left:-220px;
+}
+
+.sidebar.active{
+    left:0;
+}
+
+.topbar{
+    padding:10px 15px;
+}
+
+.search-box{
+    display:none;
+}
+
+.logo{
+    font-size:20px;
+}
+
+.dashboard,
+.profile,
+.settings,
+.history,
+.notifications,
+.file-manager,
+.help,
+.image-generator,
+.bugfix{
+    margin-left:0;
+    padding:80px 15px;
+}
+
+.feature-card,
+.history-card,
+.notification-card,
+.setting-card{
+    width:100%;
+}
+
+.chat-box{
+    height:300px;
+}
+
+input,
+textarea,
+button{
+    width:100%;
+}
+
+.input-area{
+    flex-direction:column;
+    gap:10px;
+}
+
+}
+

@@ -1,38 +1,29 @@
-const chatBox = document.getElementById("chatBox");
-const userInput = document.getElementById("userInput");
 const sendBtn = document.getElementById("sendBtn");
+const userInput = document.getElementById("userInput");
+const chatBox = document.getElementById("chatBox");
 
-function addMessage(message, sender) {
-    const msg = document.createElement("div");
 
-    if (sender === "user") {
-        msg.className = "user-message";
-    } else {
-        msg.className = "bot-message";
-    }
+sendBtn.addEventListener("click", async ()=>{
 
-    msg.textContent = message;
-    chatBox.appendChild(msg);
 
-    chatBox.scrollTop = chatBox.scrollHeight;
-}
+    let message = userInput.value;
 
-sendBtn.addEventListener("click", () => {
-    const message = userInput.value.trim();
 
-    if (message === "") return;
+    if(message==="") return;
 
-    addMessage(message, "user");
 
-    userInput.value = "";
+    chatBox.innerHTML +=
+    `<div class="user-message">${message}</div>`;
 
-    setTimeout(() => {
-        addMessage("🤖 AI response will appear here.", "bot");
-    }, 500);
-});
 
-userInput.addEventListener("keypress", (e) => {
-    if (e.key === "Enter") {
-        sendBtn.click();
-    }
+    userInput.value="";
+
+
+    let reply = await sendChatMessage(message);
+
+
+    chatBox.innerHTML +=
+    `<div class="bot-message">${reply}</div>`;
+
+
 });

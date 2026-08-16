@@ -1,39 +1,150 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>AI Coding Assistant</title>
+
     <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="assets/css/responsive.css">
+<link rel="stylesheet" href="assets/css/theme.css">
+
 </head>
+
 <body>
 
 <header>
-    <h1>🤖 AI Coding Assistant</h1>
+
+    <div class="logo">
+        🤖 AI Coding Assistant
+    </div>
+
+    <nav>
+
+        <a href="index.html">Home</a>
+
+        <a href="pages/home.html">Dashboard</a>
+
+        <a href="pages/login.html">Login</a>
+
+        <a href="pages/signup.html">Sign Up</a>
+
+        <a href="pages/code-generator.html">Code Generator</a>
+
+        <a href="pages/bug-fixer.html">Bug Fixer</a>
+
+        <a href="pages/image-generator.html">Image Generator</a>
+
+    </nav>
+
 </header>
 
-<main>
+<section class="hero">
+
+    <h1>Build Faster with AI 🚀</h1>
+
+    <p>
+        One platform for AI Chat, Code Generation, Bug Fixing,
+        Image Generation and Programming Learning.
+    </p>
+
+    <a href="pages/home.html">
+        <button class="hero-btn">
+            Launch AI Dashboard
+        </button>
+    </a>
+
+</section>
+
+<section class="features">
+
+    <div class="feature-card">
+
+        <h2>💬 AI Chat</h2>
+
+        <p>
+            Ask programming questions and receive instant AI assistance.
+        </p>
+
+    </div>
+
+    <div class="feature-card">
+
+        <h2>💻 Code Generator</h2>
+
+        <p>
+            Generate clean code snippets in multiple programming languages.
+        </p>
+
+    </div>
+
+    <div class="feature-card">
+
+        <h2>🐞 Bug Fixer</h2>
+
+        <p>
+            Detect coding mistakes and receive suggested fixes.
+        </p>
+
+    </div>
+
+    <div class="feature-card">
+
+        <h2>🎨 Image Generator</h2>
+
+        <p>
+            Create AI-generated images from simple text prompts.
+        </p>
+
+    </div>
+
+</section>
+
+<section class="chat-preview">
+
+    <h2>AI Chat Preview</h2>
+
     <div class="chat-container">
 
         <div class="chat-box" id="chatBox">
+
             <div class="bot-message">
-                Hello! How can I help you today?
+                👋 Hello! I'm your AI Coding Assistant. Ask me anything about programming.
             </div>
+
         </div>
 
         <div class="input-area">
+
             <input
                 type="text"
                 id="userInput"
                 placeholder="Ask anything about programming...">
 
-            <button id="sendBtn">Send</button>
+            <button id="sendBtn">
+                Send
+            </button>
+
         </div>
 
     </div>
-</main>
+
+</section>
+
+<footer>
+
+    <p>
+        © 2026 AI Coding Assistant. All Rights Reserved.
+    </p>
+
+</footer>
 
 <script src="script.js"></script>
 
 </body>
+
 </html>
